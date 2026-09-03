@@ -8,13 +8,14 @@ import org.ggram.antirecall.GgramAntiRecallManager
 import org.ggram.bypass.GgramRestrictionBypass
 import org.ggram.config.GgramConfig
 import org.ggram.ghost.GgramGhostController
+import org.ggram.messenger.TelegramEngine
 import org.ggram.network.GgramProxyManager
 import org.ggram.security.GgramDoubleBottomManager
 import org.ggram.ui.GgramUICustomizer
 
 /**
  * GgramApplication - Core entry point for Ggram Telegram client fork.
- * Coordinates initialization of Ghost Mode, AdBlocker, Anti-Recall, Double Bottom, Proxy, and UI theming.
+ * Coordinates initialization of Telegram Engine, Ghost Mode, AdBlocker, Anti-Recall, Double Bottom, Proxy, and UI theming.
  */
 class GgramApp : Application(), Application.ActivityLifecycleCallbacks {
 
@@ -30,7 +31,8 @@ class GgramApp : Application(), Application.ActivityLifecycleCallbacks {
         // 1. Initialize persistent configuration
         GgramConfig.init(this)
 
-        // 2. Initialize Core Ggram Subsystems
+        // 2. Initialize Telegram Engine & Messaging Subsystems
+        TelegramEngine.init(this)
         GgramAdBlocker.init(this)
         GgramGhostController.init(this)
         GgramAntiRecallManager.init(this)

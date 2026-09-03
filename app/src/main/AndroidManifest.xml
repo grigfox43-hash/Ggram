@@ -22,11 +22,11 @@
         android:theme="@style/Theme.Ggram"
         tools:targetApi="31">
 
-        <!-- Main Preferences Activity -->
+        <!-- 1. Telegram Launch Splash Activity (LAUNCHER) -->
         <activity
-            android:name=".ui.preferences.GgramPreferencesActivity"
+            android:name=".ui.launch.TelegramLaunchActivity"
             android:exported="true"
-            android:label="@string/ggram_settings_title"
+            android:label="@string/app_name"
             android:theme="@style/Theme.Ggram">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -34,14 +34,44 @@
             </intent-filter>
         </activity>
 
-        <!-- Message Revision Diff Activity -->
+        <!-- 2. Telegram Phone & Code Authentication Activity -->
+        <activity
+            android:name=".ui.auth.TelegramAuthActivity"
+            android:exported="false"
+            android:label="Вход в Telegram"
+            android:windowSoftInputMode="adjustResize"
+            android:theme="@style/Theme.Ggram" />
+
+        <!-- 3. Telegram Main Dialogs / Chats Screen -->
+        <activity
+            android:name=".ui.dialogs.TelegramDialogsActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Ggram" />
+
+        <!-- 4. Telegram Chat Conversation Screen -->
+        <activity
+            android:name=".ui.chat.TelegramChatActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize"
+            android:theme="@style/Theme.Ggram" />
+
+        <!-- 5. Ggram Preferences Activity (Accessed via Telegram drawer) -->
+        <activity
+            android:name=".ui.preferences.GgramPreferencesActivity"
+            android:exported="false"
+            android:label="@string/ggram_settings_title"
+            android:theme="@style/Theme.Ggram" />
+
+        <!-- 6. Message Revision Diff Activity -->
         <activity
             android:name=".ui.diff.GgramDiffActivity"
             android:exported="false"
             android:label="@string/ggram_history_title"
             android:theme="@style/Theme.Ggram" />
 
-        <!-- Calculator Disguise Activity (Double Bottom) -->
+        <!-- 7. Calculator Disguise Activity (Double Bottom) -->
         <activity
             android:name=".security.GgramDisguiseActivity"
             android:exported="false"

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ggram_black"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="32dp">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_ggram_art"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:text="Ggram Login"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/ggram_text_primary" />
+    </LinearLayout>
+
+    <!-- STEP 1: PHONE NUMBER INPUT -->
+    <LinearLayout
+        android:id="@+id/layout_step_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ваш телефон"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/ggram_text_primary" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Пожалуйста, подтвердите код страны и введите свой номер телефона для входа в Telegram."
+            android:textSize="13sp"
+            android:textColor="@color/ggram_text_secondary"
+            android:layout_marginBottom="24dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Страна"
+            app:boxStrokeColor="@color/ggram_green"
+            app:hintTextColor="@color/ggram_green"
+            android:textColorHint="@color/ggram_text_secondary"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Россия (+7)"
+                android:textColor="@color/ggram_text_primary"
+                android:focusable="false" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="Номер телефона"
+            app:boxStrokeColor="@color/ggram_green"
+            app:hintTextColor="@color/ggram_green"
+            android:textColorHint="@color/ggram_text_secondary"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:text="+7 999 000-00-00"
+                android:textColor="@color/ggram_text_primary" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_send_code"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="24dp"
+            android:text="Продолжить"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="@color/ggram_green"
+            app:cornerRadius="12dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_demo_login"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="12dp"
+            android:text="⚡ Войти в аккаунт Ggram (Быстрый вход)"
+            android:textColor="@color/ggram_green"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            app:strokeColor="@color/ggram_green"
+            app:cornerRadius="12dp" />
+    </LinearLayout>
+
+    <!-- STEP 2: CODE VERIFICATION INPUT (initially hidden) -->
+    <LinearLayout
+        android:id="@+id/layout_step_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Код подтверждения"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/ggram_text_primary" />
+
+        <TextView
+            android:id="@+id/tv_code_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Мы отправили проверочный код в приложение Telegram на другом вашем устройстве."
+            android:textSize="13sp"
+            android:textColor="@color/ggram_text_secondary"
+            android:layout_marginBottom="24dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Код из Telegram (5 цифр)"
+            app:boxStrokeColor="@color/ggram_green"
+            app:hintTextColor="@color/ggram_green"
+            android:textColorHint="@color/ggram_text_secondary"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="5"
+                android:textColor="@color/ggram_text_primary" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_verify_code"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="24dp"
+            android:text="Войти в Telegram"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="@color/ggram_green"
+            app:cornerRadius="12dp" />
+
+        <TextView
+            android:id="@+id/btn_back_to_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:text="Изменить номер телефона"
+            android:textColor="@color/ggram_green"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

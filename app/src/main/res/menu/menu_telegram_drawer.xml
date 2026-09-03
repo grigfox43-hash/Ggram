@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_new_group"
+            android:icon="@android:drawable/ic_menu_add"
+            android:title="Новая группа" />
+        <item
+            android:id="@+id/nav_secret_chat"
+            android:icon="@android:drawable/ic_lock_lock"
+            android:title="Секретный чат" />
+        <item
+            android:id="@+id/nav_new_channel"
+            android:icon="@android:drawable/ic_menu_agenda"
+            android:title="Создать канал" />
+        <item
+            android:id="@+id/nav_contacts"
+            android:icon="@android:drawable/ic_menu_myplaces"
+            android:title="Контакты" />
+        <item
+            android:id="@+id/nav_saved"
+            android:icon="@android:drawable/ic_menu_save"
+            android:title="Избранное" />
+    </group>
+
+    <item android:title="Ggram Премиум">
+        <menu>
+            <item
+                android:id="@+id/nav_ggram_settings"
+                android:icon="@drawable/ic_customizer"
+                android:title="⚙️ Настройки Ggram" />
+            <item
+                android:id="@+id/nav_github"
+                android:icon="@android:drawable/ic_menu_info_details"
+                android:title="О проекте Ggram" />
+        </menu>
+    </item>
+
+</menu>
