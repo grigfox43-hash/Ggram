@@ -1,0 +1,35 @@
+# Ggram Obsidian & Emerald Official Theme
+# Background: #050505 | Accent: #01ba53
+
+windowBackgroundWhite=-16448251
+windowBackgroundGray=-16120054
+windowBackgroundWhiteBlackText=-1
+windowBackgroundWhiteGrayText=-7039584
+windowBackgroundWhiteLinkText=-16664237
+windowBackgroundWhiteBlueHeader=-16664237
+actionBarDefault=-16448251
+actionBarDefaultIcon=-16664237
+actionBarDefaultTitle=-1
+actionBarDefaultSubtitle=-7039584
+actionBarDefaultSelector=-15987186
+chat_inBubble=-15853550
+chat_inBubbleSelected=-15525096
+chat_outBubble=-16664237
+chat_outBubbleSelected=-16718236
+chat_messageTextIn=-1
+chat_messageTextOut=-1
+chat_messageLinkIn=-16664237
+chat_messageLinkOut=-1
+chat_outTimeText=-3355444
+chat_inTimeText=-7039584
+chats_unreadCounter=-16664237
+chats_unreadCounterText=-1
+chats_name=-1
+chats_message=-7039584
+chats_date=-7039584
+switchTrack=-16664237
+switchTrackChecked=-16664237
+dialogButton=-16664237
+avatar_backgroundGreen=-16664237
+profile_title=-1
+profile_creatorIcon=-16664237

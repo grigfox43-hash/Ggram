@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Ggram Core Brand Colors (#050505 & #01ba53) -->
+    <color name="ggram_black">#050505</color>
+    <color name="ggram_surface">#0C0F0D</color>
+    <color name="ggram_card">#121814</color>
+    <color name="ggram_card_stroke">#1C2620</color>
+    
+    <color name="ggram_green">#01BA53</color>
+    <color name="ggram_green_light">#00E664</color>
+    <color name="ggram_green_dark">#018F40</color>
+    <color name="ggram_green_15">#2601BA53</color>
+    <color name="ggram_green_30">#4D01BA53</color>
+
+    <!-- Typography Colors -->
+    <color name="ggram_text_primary">#FFFFFF</color>
+    <color name="ggram_text_secondary">#94A3B8</color>
+    <color name="ggram_text_muted">#526058</color>
+
+    <!-- Chat & Bubble Colors -->
+    <color name="ggram_bubble_in">#0E1812</color>
+    <color name="ggram_bubble_in_stroke">#1A2A20</color>
+    <color name="ggram_bubble_out">#01BA53</color>
+    <color name="ggram_bubble_out_text">#FFFFFF</color>
+
+    <!-- Status Badges -->
+    <color name="ggram_deleted_badge">#EF4444</color>
+    <color name="ggram_deleted_badge_bg">#26EF4444</color>
+    <color name="ggram_edited_badge">#01BA53</color>
+    <color name="ggram_edited_badge_bg">#2601BA53</color>
+</resources>

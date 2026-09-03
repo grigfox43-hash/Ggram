@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base Ggram Obsidian Theme -->
+    <style name="Theme.Ggram" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary Brand Colors (#050505 and #01ba53) -->
+        <item name="colorPrimary">@color/ggram_green</item>
+        <item name="colorPrimaryVariant">@color/ggram_green_dark</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSecondary">@color/ggram_green_light</item>
+        <item name="colorSecondaryVariant">@color/ggram_green</item>
+        <item name="colorOnSecondary">#050505</item>
+
+        <!-- Background & Surface Colors -->
+        <item name="android:windowBackground">@color/ggram_black</item>
+        <item name="android:colorBackground">@color/ggram_black</item>
+        <item name="colorSurface">@color/ggram_surface</item>
+        <item name="colorOnSurface">@color/ggram_text_primary</item>
+
+        <!-- System Bars Styling -->
+        <item name="android:statusBarColor">@color/ggram_black</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:navigationBarColor">@color/ggram_black</item>
+        <item name="android:windowLightNavigationBar">false</item>
+
+        <!-- UI Components -->
+        <item name="materialCardViewStyle">@style/Widget.Ggram.CardView</item>
+        <item name="switchStyle">@style/Widget.Ggram.Switch</item>
+    </style>
+
+    <style name="Widget.Ggram.CardView" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/ggram_card</item>
+        <item name="strokeColor">@color/ggram_card_stroke</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardElevation">0dp</item>
+    </style>
+
+    <style name="Widget.Ggram.Switch" parent="Widget.MaterialComponents.CompoundButton.Switch">
+        <item name="thumbTint">@color/ggram_green</item>
+        <item name="trackTint">@color/ggram_green_15</item>
+    </style>
+</resources>

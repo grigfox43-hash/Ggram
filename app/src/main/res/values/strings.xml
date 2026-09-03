@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ggram</string>
+    <string name="ggram_settings_title">Ggram Preferences</string>
+    <string name="ggram_settings_subtitle">Ultimate Telegram Fork ? v1.0.0 Emerald</string>
+    <string name="ggram_history_title">Message Edit History</string>
+
+    <!-- Category Headers -->
+    <string name="category_ghost">?? Ghost &amp; Privacy Suite</string>
+    <string name="category_adblock">??? AdBlock &amp; Anti-Sponsor</string>
+    <string name="category_antirecall">?? Anti-Recall &amp; Message Spy</string>
+    <string name="category_bypass">?? Restrictions Bypass</string>
+    <string name="category_ui">?? UI &amp; Interface Customizer</string>
+    <string name="category_network">? Network &amp; Utilities</string>
+    <string name="category_about">?? About Ggram</string>
+
+    <!-- Ghost Mode Features -->
+    <string name="pref_ghost_read">Stealth Read Mode</string>
+    <string name="pref_ghost_read_desc">Read messages without sending read checkmarks to sender</string>
+    <string name="pref_ghost_read_reply">Mark as Read on Reply</string>
+    <string name="pref_ghost_read_reply_desc">Automatically mark chat as read only when sending a reply</string>
+    <string name="pref_ghost_typing">Stealth Typing &amp; Recording</string>
+    <string name="pref_ghost_typing_desc">Never broadcast typing or voice/video recording indicators</string>
+    <string name="pref_ghost_online">Lock Offline Status</string>
+    <string name="pref_ghost_online_desc">Keep your account permanently offline to other users</string>
+    <string name="pref_ghost_stories">Ghost Stories Viewer</string>
+    <string name="pref_ghost_stories_desc">Watch stories anonymously without appearing in view list</string>
+    <string name="pref_confirm_voice">Confirm Voice Message Send</string>
+    <string name="pref_confirm_voice_desc">Ask for confirmation before sending audio messages</string>
+    <string name="pref_confirm_video">Confirm Video Message Send</string>
+    <string name="pref_confirm_video_desc">Ask for confirmation before sending video circle notes</string>
+    <string name="pref_confirm_stickers">Confirm Sticker Tap</string>
+    <string name="pref_confirm_stickers_desc">Prevent accidental sticker sending on single tap</string>
+    <string name="pref_confirm_calls">Confirm Phone Calls</string>
+    <string name="pref_confirm_calls_desc">Prompt before initiating voice or video calls</string>
+
+    <!-- AdBlock Features -->
+    <string name="pref_adblock_sponsored">Block Native Sponsored Ads</string>
+    <string name="pref_adblock_sponsored_desc">Completely strips sponsored ads in public channels</string>
+    <string name="pref_adblock_channel_posts">Filter Channel Promo Posts</string>
+    <string name="pref_adblock_channel_posts_desc">Detects and hides promotional messages by heuristic filter</string>
+    <string name="pref_adblock_premium_upsell">Suppress Premium Upsells</string>
+    <string name="pref_adblock_premium_upsell_desc">Removes Telegram Premium nags, Star gifts and promo banners</string>
+
+    <!-- Anti-Recall Features -->
+    <string name="pref_antirecall_save_deleted">Save Deleted Messages</string>
+    <string name="pref_antirecall_save_deleted_desc">Retains deleted messages with red [Deleted] badge</string>
+    <string name="pref_antirecall_edit_history">Message Edit History</string>
+    <string name="pref_antirecall_edit_history_desc">Keeps previous revisions of edited messages with diff viewer</string>
+    <string name="pref_antirecall_save_self_destruct">Save Self-Destructing Media</string>
+    <string name="pref_antirecall_save_self_destruct_desc">Automatically saves disappearing photos and videos to vault</string>
+
+    <!-- Bypass Restrictions -->
+    <string name="pref_bypass_flag_secure">Allow Screenshots Anywhere</string>
+    <string name="pref_bypass_flag_secure_desc">Disables FLAG_SECURE to permit screenshots and screen recording</string>
+    <string name="pref_bypass_noforwards">Bypass Channel Protection</string>
+    <string name="pref_bypass_noforwards_desc">Enables copying text, forwarding and saving in restricted channels</string>
+
+    <!-- UI Customizer -->
+    <string name="pref_ui_bottom_nav">Bottom Navigation Bar</string>
+    <string name="pref_ui_bottom_nav_desc">Enable sleek bottom navigation tabs instead of side drawer</string>
+    <string name="pref_ui_bubble_radius">Custom Bubble Corner Radius</string>
+    <string name="pref_ui_bubble_radius_desc">Set rounded corner radius for message bubbles (0 - 24dp)</string>
+    <string name="pref_ui_show_id_dc">Show User ID &amp; Data Center</string>
+    <string name="pref_ui_show_id_dc_desc">Displays DC and numeric Telegram ID in profile pages</string>
+    <string name="pref_ui_unlimited_pins">Unlimited Pinned Chats</string>
+    <string name="pref_ui_unlimited_pins_desc">Pin as many chats as you want in folder tabs</string>
+
+    <!-- Confirmation Dialogs -->
+    <string name="dialog_confirm_title">Confirm Action</string>
+    <string name="dialog_confirm_voice_msg">Do you want to send this voice message?</string>
+    <string name="dialog_confirm_video_msg">Do you want to send this video note?</string>
+    <string name="dialog_confirm_sticker_msg">Do you want to send this sticker?</string>
+    <string name="dialog_confirm_call_msg">Do you want to call this user?</string>
+    <string name="action_send">Send</string>
+    <string name="action_call">Call</string>
+    <string name="action_cancel">Cancel</string>
+
+    <!-- Status Badges -->
+    <string name="badge_deleted">[Deleted]</string>
+    <string name="badge_edited">[Edited]</string>
+    <string name="about_version">Ggram for Android v1.0.0 (Emerald Edition)</string>
+    <string name="about_palette">Palette: Obsidian #050505 &amp; Emerald #01ba53</string>
+</resources>
