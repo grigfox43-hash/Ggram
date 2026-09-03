@@ -29,7 +29,7 @@ jobs:
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v3
         with:
-          gradle-version: '8.2.2'
+          gradle-version: '8.5'
 
       - name: Build Ggram Debug APK
         run: gradle assembleDebug --stacktrace
@@ -37,13 +37,13 @@ jobs:
       - name: Prepare APK Artifacts
         run: |
           mkdir -p output_apk
-          find app/build/outputs/apk -type f -name "*.apk" -exec cp {} output_apk/Ggram-v1.1.0-emerald-debug.apk \;
+          find app/build/outputs/apk -type f -name "*.apk" -exec cp {} output_apk/Ggram-v1.2.0-emerald-debug.apk \;
           ls -la output_apk/
 
       - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: Ggram-v1.1.0-emerald-debug
+          name: Ggram-v1.2.0-emerald-debug
           path: output_apk/*.apk
           retention-days: 30
 
