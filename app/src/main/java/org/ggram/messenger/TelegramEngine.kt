@@ -172,7 +172,7 @@ object TelegramEngine {
         if (GgramConfig.isAntiRecallDeleted) {
             // Anti-Recall: do not remove from list! Mark as deleted
             msg.isDeleted = true
-            GgramAntiRecallManager.onMessageDeleted(chatId, messageId)
+            GgramAntiRecallManager.onMessageDeleted(chatId, messageId, msg.text, msg.senderName)
             Log.i(TAG, "Anti-Recall caught deleted message $messageId in chat $chatId")
         } else {
             messages.remove(msg)
