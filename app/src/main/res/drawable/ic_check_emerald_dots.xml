@@ -3,14 +3,10 @@
     android:height="18dp"
     android:viewportWidth="18"
     android:viewportHeight="18">
-    <circle
-        android:cx="6"
-        android:cy="9"
-        android:r="2.5"
-        android:fillColor="#01BA53" />
-    <circle
-        android:cx="12"
-        android:cy="9"
-        android:r="2.5"
-        android:fillColor="#00E664" />
+    <path
+        android:fillColor="#01BA53"
+        android:pathData="M 3.5,9 a 2.5,2.5 0 1,0 5,0 a 2.5,2.5 0 1,0 -5,0" />
+    <path
+        android:fillColor="#00E664"
+        android:pathData="M 9.5,9 a 2.5,2.5 0 1,0 5,0 a 2.5,2.5 0 1,0 -5,0" />
 </vector>
