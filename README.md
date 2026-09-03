@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Версия-1.2.0_Emerald-01ba53?style=for-the-badge" alt="Version" />
+  <img src="https://img.shields.io/badge/Версия-1.2.1_Emerald-01ba53?style=for-the-badge" alt="Version" />
   <img src="https://img.shields.io/badge/CI%2FCD-GitHub_Actions-01ba53?style=for-the-badge&logo=githubactions" alt="CI/CD" />
   <img src="https://img.shields.io/badge/AdBlock-100%25_Блокировка-01ba53?style=for-the-badge" alt="AdBlock" />
   <img src="https://img.shields.io/badge/Ghost_Mode-Невидимка-01ba53?style=for-the-badge" alt="Ghost" />
