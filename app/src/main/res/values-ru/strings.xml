@@ -2,17 +2,44 @@
 <resources>
     <string name="app_name">Ggram</string>
     <string name="ggram_settings_title">Настройки Ggram</string>
-    <string name="ggram_settings_subtitle">Премиальный форк Telegram • v1.0.0 Emerald</string>
+    <string name="ggram_settings_subtitle">Премиальный форк Telegram • v1.1.0 Emerald</string>
     <string name="ggram_history_title">История изменений сообщения</string>
 
     <!-- Разделы -->
     <string name="category_ghost">👻 Режим невидимки (Ghost Mode)</string>
     <string name="category_adblock">🛡️ Блокировка рекламы (AdBlock)</string>
+    <string name="category_ai">🤖 AI и функции Premium бесплатно</string>
+    <string name="category_security">🔒 Двойное дно и безопасность</string>
+    <string name="category_media">⚡ Turbo-загрузчик медиафайлов</string>
+    <string name="category_network">🌐 Прокси и анти-цензура</string>
     <string name="category_antirecall">💾 Сохранение сообщений (Anti-Recall)</string>
     <string name="category_bypass">🔓 Обход ограничений (Bypass)</string>
     <string name="category_ui">🎨 Кастомизация интерфейса</string>
-    <string name="category_network">⚡ Сеть и инструменты</string>
     <string name="category_about">ℹ️ О приложении Ggram</string>
+
+    <!-- AI и Премиум бесплатно -->
+    <string name="pref_ai_v2t">Бесплатный Voice-to-Text</string>
+    <string name="pref_ai_v2t_desc">Перевод голосовых и видеосообщений в текст без Telegram Premium</string>
+    <string name="pref_ai_translator">Встроенный переводчик сообщений</string>
+    <string name="pref_ai_translator_desc">Мгновенный перевод сообщений в один тап (Google, DeepL, Yandex)</string>
+    <string name="pref_ai_summarizer">AI-саммаризатор каналов</string>
+    <string name="pref_ai_summarizer_desc">Краткая выжимка ключевых тезисов из длинных публикаций</string>
+
+    <!-- Двойное дно и безопасность -->
+    <string name="pref_sec_double_bottom">Система «Двойное дно»</string>
+    <string name="pref_sec_double_bottom_desc">Вход по ложному PIN-коду скрывает секретные чаты и данные</string>
+    <string name="pref_sec_data_redaction">Маскировка личных данных на скриншотах</string>
+    <string name="pref_sec_data_redaction_desc">Автоматическое скрытие номеров телефонов, карт и криптокошельков</string>
+
+    <!-- Turbo-загрузчик -->
+    <string name="pref_media_turbo">Многопоточный Turbo-загрузчик</string>
+    <string name="pref_media_turbo_desc">Ускоренная загрузка файлов до 4 ГБ в 4–8 параллельных потоков</string>
+    <string name="pref_media_bg_playback">Фоновое воспроизведение кружочков</string>
+    <string name="pref_media_bg_playback_desc">Не прерывать воспроизведение видеозаметок при блокировке экрана</string>
+
+    <!-- Прокси -->
+    <string name="pref_net_auto_proxy">Авто-выбор быстрейшего прокси</string>
+    <string name="pref_net_auto_proxy_desc">Замер задержки (ping) узлов и автоматическое подключение к лучшему</string>
 
     <!-- Невидимка -->
     <string name="pref_ghost_read">Скрытое чтение сообщений</string>
@@ -59,6 +86,10 @@
     <!-- Кастомизация интерфейса -->
     <string name="pref_ui_bottom_nav">Нижняя панель навигации</string>
     <string name="pref_ui_bottom_nav_desc">Современное нижнее меню переключения разделов вместо боковой шторки</string>
+    <string name="pref_ui_compact_chats">Ультра-компактный список чатов</string>
+    <string name="pref_ui_compact_chats_desc">Сжатие отступов и скрытие аватарок для отображения 15+ диалогов</string>
+    <string name="pref_ui_disable_swipe_up">Отключить свайп на следующий канал</string>
+    <string name="pref_ui_disable_swipe_up_desc">Блокирует случайный переход в чужие каналы при достижении конца ленты</string>
     <string name="pref_ui_bubble_radius">Радиус скругления пузырей сообщений</string>
     <string name="pref_ui_bubble_radius_desc">Настройка скругления углов сообщений в диалогах</string>
     <string name="pref_ui_show_id_dc">Показывать ID и Датацентр (DC)</string>
@@ -79,6 +110,6 @@
     <!-- Метки -->
     <string name="badge_deleted">[Удалено]</string>
     <string name="badge_edited">[Изм.]</string>
-    <string name="about_version">Ggram для Android v1.0.0 (Emerald Edition)</string>
+    <string name="about_version">Ggram для Android v1.1.0 (Emerald All-in-One)</string>
     <string name="about_palette">Палитра: Obsidian #050505 и Emerald #01ba53</string>
 </resources>

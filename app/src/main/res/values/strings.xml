@@ -2,17 +2,44 @@
 <resources>
     <string name="app_name">Ggram</string>
     <string name="ggram_settings_title">Ggram Preferences</string>
-    <string name="ggram_settings_subtitle">Ultimate Telegram Fork ? v1.0.0 Emerald</string>
+    <string name="ggram_settings_subtitle">Ultimate Telegram Fork • v1.1.0 Emerald</string>
     <string name="ggram_history_title">Message Edit History</string>
 
     <!-- Category Headers -->
-    <string name="category_ghost">?? Ghost &amp; Privacy Suite</string>
-    <string name="category_adblock">??? AdBlock &amp; Anti-Sponsor</string>
-    <string name="category_antirecall">?? Anti-Recall &amp; Message Spy</string>
-    <string name="category_bypass">?? Restrictions Bypass</string>
-    <string name="category_ui">?? UI &amp; Interface Customizer</string>
-    <string name="category_network">? Network &amp; Utilities</string>
-    <string name="category_about">?? About Ggram</string>
+    <string name="category_ghost">👻 Ghost &amp; Privacy Suite</string>
+    <string name="category_adblock">🛡️ AdBlock &amp; Anti-Sponsor</string>
+    <string name="category_ai">🤖 AI &amp; Free Premium Tools</string>
+    <string name="category_security">🔒 Double Bottom &amp; Stealth Vault</string>
+    <string name="category_media">⚡ Turbo Media Downloader</string>
+    <string name="category_network">🌐 Proxy &amp; Anti-Censorship</string>
+    <string name="category_antirecall">💾 Anti-Recall &amp; Message Spy</string>
+    <string name="category_bypass">🔓 Restrictions Bypass</string>
+    <string name="category_ui">🎨 UI &amp; Interface Customizer</string>
+    <string name="category_about">ℹ️ About Ggram</string>
+
+    <!-- AI & Free Premium -->
+    <string name="pref_ai_v2t">Free Voice-to-Text</string>
+    <string name="pref_ai_v2t_desc">Transcribe voice and video messages to text without Telegram Premium</string>
+    <string name="pref_ai_translator">In-Line Message Translator</string>
+    <string name="pref_ai_translator_desc">One-tap instant translation via Google, DeepL, or Yandex</string>
+    <string name="pref_ai_summarizer">Channel AI Summarizer</string>
+    <string name="pref_ai_summarizer_desc">Generate concise bullet points for long channel posts</string>
+
+    <!-- Double Bottom & Security -->
+    <string name="pref_sec_double_bottom">Double Bottom System</string>
+    <string name="pref_sec_double_bottom_desc">Unlock decoy profile or hide sensitive chats using panic PIN</string>
+    <string name="pref_sec_data_redaction">Sensitive Data Redaction</string>
+    <string name="pref_sec_data_redaction_desc">Automatically mask phone numbers, cards, and crypto wallets on screenshots</string>
+
+    <!-- Turbo Downloader -->
+    <string name="pref_media_turbo">Turbo Multi-Thread Downloader</string>
+    <string name="pref_media_turbo_desc">Accelerates file downloads up to 4 GB with 4–8 concurrent threads</string>
+    <string name="pref_media_bg_playback">Background Circle &amp; Audio Playback</string>
+    <string name="pref_media_bg_playback_desc">Continue playing voice notes and video circles with screen locked</string>
+
+    <!-- Proxy & Network -->
+    <string name="pref_net_auto_proxy">Auto-Select Fastest Proxy</string>
+    <string name="pref_net_auto_proxy_desc">Automatically ping and switch to the lowest latency node</string>
 
     <!-- Ghost Mode Features -->
     <string name="pref_ghost_read">Stealth Read Mode</string>
@@ -59,6 +86,10 @@
     <!-- UI Customizer -->
     <string name="pref_ui_bottom_nav">Bottom Navigation Bar</string>
     <string name="pref_ui_bottom_nav_desc">Enable sleek bottom navigation tabs instead of side drawer</string>
+    <string name="pref_ui_compact_chats">Ultra-Compact Chat List</string>
+    <string name="pref_ui_compact_chats_desc">Hide avatars and compress list padding to fit 15+ chats</string>
+    <string name="pref_ui_disable_swipe_up">Disable Swipe-Up to Next Channel</string>
+    <string name="pref_ui_disable_swipe_up_desc">Prevent accidental navigation to next channel when reaching feed end</string>
     <string name="pref_ui_bubble_radius">Custom Bubble Corner Radius</string>
     <string name="pref_ui_bubble_radius_desc">Set rounded corner radius for message bubbles (0 - 24dp)</string>
     <string name="pref_ui_show_id_dc">Show User ID &amp; Data Center</string>
@@ -79,6 +110,6 @@
     <!-- Status Badges -->
     <string name="badge_deleted">[Deleted]</string>
     <string name="badge_edited">[Edited]</string>
-    <string name="about_version">Ggram for Android v1.0.0 (Emerald Edition)</string>
+    <string name="about_version">Ggram for Android v1.1.0 (Emerald All-in-One)</string>
     <string name="about_palette">Palette: Obsidian #050505 &amp; Emerald #01ba53</string>
 </resources>

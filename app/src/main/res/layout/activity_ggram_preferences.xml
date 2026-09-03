@@ -62,7 +62,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="??? 100% AdBlock"
+                        android:text="🛡️ 100% AdBlock"
                         android:textSize="11sp"
                         android:textColor="@color/ggram_green"
                         android:background="@drawable/bg_badge_edited"
@@ -71,7 +71,16 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="?? Ghost Active"
+                        android:text="👻 Ghost Active"
+                        android:textSize="11sp"
+                        android:textColor="@color/ggram_green"
+                        android:background="@drawable/bg_badge_edited"
+                        android:layout_marginEnd="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🤖 Free AI"
                         android:textSize="11sp"
                         android:textColor="@color/ggram_green"
                         android:background="@drawable/bg_badge_edited" />
@@ -118,14 +127,12 @@
                         style="@style/GgramTextHeader"
                         android:layout_marginBottom="12dp" />
 
-                    <!-- Ghost Read Switch -->
                     <com.google.android.material.switchmaterial.SwitchMaterial
                         android:id="@+id/switch_ghost_read"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/pref_ghost_read"
                         android:textColor="@color/ggram_text_primary" />
-
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -133,14 +140,12 @@
                         style="@style/GgramTextDesc"
                         android:layout_marginBottom="12dp" />
 
-                    <!-- Read on Reply Switch -->
                     <com.google.android.material.switchmaterial.SwitchMaterial
                         android:id="@+id/switch_ghost_read_reply"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/pref_ghost_read_reply"
                         android:textColor="@color/ggram_text_primary" />
-
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -148,14 +153,12 @@
                         style="@style/GgramTextDesc"
                         android:layout_marginBottom="12dp" />
 
-                    <!-- Stealth Typing Switch -->
                     <com.google.android.material.switchmaterial.SwitchMaterial
                         android:id="@+id/switch_ghost_typing"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/pref_ghost_typing"
                         android:textColor="@color/ggram_text_primary" />
-
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -163,14 +166,12 @@
                         style="@style/GgramTextDesc"
                         android:layout_marginBottom="12dp" />
 
-                    <!-- Offline Status Lock Switch -->
                     <com.google.android.material.switchmaterial.SwitchMaterial
                         android:id="@+id/switch_ghost_online"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/pref_ghost_online"
                         android:textColor="@color/ggram_text_primary" />
-
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -178,14 +179,12 @@
                         style="@style/GgramTextDesc"
                         android:layout_marginBottom="12dp" />
 
-                    <!-- Stealth Stories Switch -->
                     <com.google.android.material.switchmaterial.SwitchMaterial
                         android:id="@+id/switch_ghost_stories"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/pref_ghost_stories"
                         android:textColor="@color/ggram_text_primary" />
-
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -193,14 +192,12 @@
                         style="@style/GgramTextDesc"
                         android:layout_marginBottom="12dp" />
 
-                    <!-- Confirm Voice Switch -->
                     <com.google.android.material.switchmaterial.SwitchMaterial
                         android:id="@+id/switch_confirm_voice"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/pref_confirm_voice"
                         android:textColor="@color/ggram_text_primary" />
-
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -208,14 +205,12 @@
                         style="@style/GgramTextDesc"
                         android:layout_marginBottom="12dp" />
 
-                    <!-- Confirm Video Switch -->
                     <com.google.android.material.switchmaterial.SwitchMaterial
                         android:id="@+id/switch_confirm_video"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/pref_confirm_video"
                         android:textColor="@color/ggram_text_primary" />
-
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -223,29 +218,12 @@
                         style="@style/GgramTextDesc"
                         android:layout_marginBottom="12dp" />
 
-                    <!-- Confirm Stickers Switch -->
-                    <com.google.android.material.switchmaterial.SwitchMaterial
-                        android:id="@+id/switch_confirm_stickers"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/pref_confirm_stickers"
-                        android:textColor="@color/ggram_text_primary" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/pref_confirm_stickers_desc"
-                        style="@style/GgramTextDesc"
-                        android:layout_marginBottom="12dp" />
-
-                    <!-- Confirm Calls Switch -->
                     <com.google.android.material.switchmaterial.SwitchMaterial
                         android:id="@+id/switch_confirm_calls"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/pref_confirm_calls"
                         android:textColor="@color/ggram_text_primary" />
-
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -274,14 +252,12 @@
                         style="@style/GgramTextHeader"
                         android:layout_marginBottom="12dp" />
 
-                    <!-- Native Sponsored Ads Switch -->
                     <com.google.android.material.switchmaterial.SwitchMaterial
                         android:id="@+id/switch_adblock_sponsored"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/pref_adblock_sponsored"
                         android:textColor="@color/ggram_text_primary" />
-
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -289,14 +265,12 @@
                         style="@style/GgramTextDesc"
                         android:layout_marginBottom="12dp" />
 
-                    <!-- Channel Promo Filter Switch -->
                     <com.google.android.material.switchmaterial.SwitchMaterial
                         android:id="@+id/switch_adblock_channel_posts"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/pref_adblock_channel_posts"
                         android:textColor="@color/ggram_text_primary" />
-
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -304,14 +278,12 @@
                         style="@style/GgramTextDesc"
                         android:layout_marginBottom="12dp" />
 
-                    <!-- Premium Upsell Filter Switch -->
                     <com.google.android.material.switchmaterial.SwitchMaterial
                         android:id="@+id/switch_adblock_premium"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/pref_adblock_premium_upsell"
                         android:textColor="@color/ggram_text_primary" />
-
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -321,7 +293,195 @@
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
-            <!-- 3. ANTI-RECALL CARD -->
+            <!-- 3. AI & FREE PREMIUM CARD -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/category_ai"
+                        style="@style/GgramTextHeader"
+                        android:layout_marginBottom="12dp" />
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/switch_ai_v2t"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pref_ai_v2t"
+                        android:textColor="@color/ggram_text_primary" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pref_ai_v2t_desc"
+                        style="@style/GgramTextDesc"
+                        android:layout_marginBottom="12dp" />
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/switch_ai_translator"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pref_ai_translator"
+                        android:textColor="@color/ggram_text_primary" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pref_ai_translator_desc"
+                        style="@style/GgramTextDesc"
+                        android:layout_marginBottom="12dp" />
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/switch_ai_summarizer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pref_ai_summarizer"
+                        android:textColor="@color/ggram_text_primary" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pref_ai_summarizer_desc"
+                        style="@style/GgramTextDesc" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- 4. DOUBLE BOTTOM & SECURITY CARD -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/category_security"
+                        style="@style/GgramTextHeader"
+                        android:layout_marginBottom="12dp" />
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/switch_sec_double_bottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pref_sec_double_bottom"
+                        android:textColor="@color/ggram_text_primary" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pref_sec_double_bottom_desc"
+                        style="@style/GgramTextDesc"
+                        android:layout_marginBottom="12dp" />
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/switch_sec_data_redaction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pref_sec_data_redaction"
+                        android:textColor="@color/ggram_text_primary" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pref_sec_data_redaction_desc"
+                        style="@style/GgramTextDesc" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- 5. TURBO DOWNLOADER & MEDIA CARD -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/category_media"
+                        style="@style/GgramTextHeader"
+                        android:layout_marginBottom="12dp" />
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/switch_media_turbo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pref_media_turbo"
+                        android:textColor="@color/ggram_text_primary" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pref_media_turbo_desc"
+                        style="@style/GgramTextDesc"
+                        android:layout_marginBottom="12dp" />
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/switch_media_bg_playback"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pref_media_bg_playback"
+                        android:textColor="@color/ggram_text_primary" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pref_media_bg_playback_desc"
+                        style="@style/GgramTextDesc" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- 6. PROXY & ANTI-CENSORSHIP CARD -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/category_network"
+                        style="@style/GgramTextHeader"
+                        android:layout_marginBottom="12dp" />
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/switch_net_auto_proxy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pref_net_auto_proxy"
+                        android:textColor="@color/ggram_text_primary" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pref_net_auto_proxy_desc"
+                        style="@style/GgramTextDesc" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- 7. ANTI-RECALL CARD -->
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -340,14 +500,12 @@
                         style="@style/GgramTextHeader"
                         android:layout_marginBottom="12dp" />
 
-                    <!-- Save Deleted Messages Switch -->
                     <com.google.android.material.switchmaterial.SwitchMaterial
                         android:id="@+id/switch_antirecall_deleted"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/pref_antirecall_save_deleted"
                         android:textColor="@color/ggram_text_primary" />
-
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -355,14 +513,12 @@
                         style="@style/GgramTextDesc"
                         android:layout_marginBottom="12dp" />
 
-                    <!-- Edit History Switch -->
                     <com.google.android.material.switchmaterial.SwitchMaterial
                         android:id="@+id/switch_antirecall_edits"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/pref_antirecall_edit_history"
                         android:textColor="@color/ggram_text_primary" />
-
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -370,14 +526,12 @@
                         style="@style/GgramTextDesc"
                         android:layout_marginBottom="12dp" />
 
-                    <!-- Save Self-Destruct Media Switch -->
                     <com.google.android.material.switchmaterial.SwitchMaterial
                         android:id="@+id/switch_antirecall_media"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/pref_antirecall_save_self_destruct"
                         android:textColor="@color/ggram_text_primary" />
-
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -387,7 +541,7 @@
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
-            <!-- 4. RESTRICTIONS BYPASS CARD -->
+            <!-- 8. RESTRICTIONS BYPASS CARD -->
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -406,14 +560,12 @@
                         style="@style/GgramTextHeader"
                         android:layout_marginBottom="12dp" />
 
-                    <!-- FLAG_SECURE Switch -->
                     <com.google.android.material.switchmaterial.SwitchMaterial
                         android:id="@+id/switch_bypass_flag_secure"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/pref_bypass_flag_secure"
                         android:textColor="@color/ggram_text_primary" />
-
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -421,14 +573,12 @@
                         style="@style/GgramTextDesc"
                         android:layout_marginBottom="12dp" />
 
-                    <!-- NoForwards Bypass Switch -->
                     <com.google.android.material.switchmaterial.SwitchMaterial
                         android:id="@+id/switch_bypass_noforwards"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/pref_bypass_noforwards"
                         android:textColor="@color/ggram_text_primary" />
-
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -438,7 +588,7 @@
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
-            <!-- 5. UI CUSTOMIZER CARD -->
+            <!-- 9. UI CUSTOMIZER CARD -->
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -457,14 +607,12 @@
                         style="@style/GgramTextHeader"
                         android:layout_marginBottom="12dp" />
 
-                    <!-- Bottom Nav Switch -->
                     <com.google.android.material.switchmaterial.SwitchMaterial
                         android:id="@+id/switch_ui_bottom_nav"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/pref_ui_bottom_nav"
                         android:textColor="@color/ggram_text_primary" />
-
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -472,39 +620,35 @@
                         style="@style/GgramTextDesc"
                         android:layout_marginBottom="12dp" />
 
-                    <!-- Show ID and DC Switch -->
                     <com.google.android.material.switchmaterial.SwitchMaterial
-                        android:id="@+id/switch_ui_show_id_dc"
+                        android:id="@+id/switch_ui_compact_chats"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/pref_ui_show_id_dc"
+                        android:text="@string/pref_ui_compact_chats"
                         android:textColor="@color/ggram_text_primary" />
-
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/pref_ui_show_id_dc_desc"
+                        android:text="@string/pref_ui_compact_chats_desc"
                         style="@style/GgramTextDesc"
                         android:layout_marginBottom="12dp" />
 
-                    <!-- Unlimited Pins Switch -->
                     <com.google.android.material.switchmaterial.SwitchMaterial
-                        android:id="@+id/switch_ui_unlimited_pins"
+                        android:id="@+id/switch_ui_disable_swipe_up"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/pref_ui_unlimited_pins"
+                        android:text="@string/pref_ui_disable_swipe_up"
                         android:textColor="@color/ggram_text_primary" />
-
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/pref_ui_unlimited_pins_desc"
+                        android:text="@string/pref_ui_disable_swipe_up_desc"
                         style="@style/GgramTextDesc" />
 
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
-            <!-- 6. ABOUT & GITHUB CARD -->
+            <!-- 10. ABOUT & GITHUB CARD -->
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

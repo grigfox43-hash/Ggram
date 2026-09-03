@@ -8,11 +8,13 @@ import org.ggram.antirecall.GgramAntiRecallManager
 import org.ggram.bypass.GgramRestrictionBypass
 import org.ggram.config.GgramConfig
 import org.ggram.ghost.GgramGhostController
+import org.ggram.network.GgramProxyManager
+import org.ggram.security.GgramDoubleBottomManager
 import org.ggram.ui.GgramUICustomizer
 
 /**
  * GgramApplication - Core entry point for Ggram Telegram client fork.
- * Coordinates initialization of Ghost Mode, AdBlocker, Anti-Recall, and UI theming.
+ * Coordinates initialization of Ghost Mode, AdBlocker, Anti-Recall, Double Bottom, Proxy, and UI theming.
  */
 class GgramApp : Application(), Application.ActivityLifecycleCallbacks {
 
@@ -33,6 +35,8 @@ class GgramApp : Application(), Application.ActivityLifecycleCallbacks {
         GgramGhostController.init(this)
         GgramAntiRecallManager.init(this)
         GgramRestrictionBypass.init(this)
+        GgramDoubleBottomManager.init(this)
+        GgramProxyManager.init(this)
         GgramUICustomizer.init(this)
 
         // 3. Register lifecycle callbacks to handle window FLAG_SECURE bypass across all screens

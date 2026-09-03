@@ -22,6 +22,7 @@
         android:theme="@style/Theme.Ggram"
         tools:targetApi="31">
 
+        <!-- Main Preferences Activity -->
         <activity
             android:name=".ui.preferences.GgramPreferencesActivity"
             android:exported="true"
@@ -33,10 +34,18 @@
             </intent-filter>
         </activity>
 
+        <!-- Message Revision Diff Activity -->
         <activity
             android:name=".ui.diff.GgramDiffActivity"
             android:exported="false"
             android:label="@string/ggram_history_title"
+            android:theme="@style/Theme.Ggram" />
+
+        <!-- Calculator Disguise Activity (Double Bottom) -->
+        <activity
+            android:name=".security.GgramDisguiseActivity"
+            android:exported="false"
+            android:label="Калькулятор"
             android:theme="@style/Theme.Ggram" />
 
     </application>

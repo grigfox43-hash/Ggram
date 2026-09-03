@@ -1,0 +1,16 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="18dp"
+    android:height="18dp"
+    android:viewportWidth="18"
+    android:viewportHeight="18">
+    <circle
+        android:cx="6"
+        android:cy="9"
+        android:r="2.5"
+        android:fillColor="#01BA53" />
+    <circle
+        android:cx="12"
+        android:cy="9"
+        android:r="2.5"
+        android:fillColor="#00E664" />
+</vector>
