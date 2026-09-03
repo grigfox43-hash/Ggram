@@ -55,10 +55,10 @@ class GgramDiffActivity : AppCompatActivity() {
             val sdf = SimpleDateFormat("HH:mm:ss dd.MM.yyyy", Locale.getDefault())
             val dateStr = sdf.format(Date(item.timestamp))
 
-            holder.tvRevision.text = "Revision #${item.revisionId} ? $dateStr"
+            holder.tvRevision.text = "Revision #${item.revisionId} • $dateStr"
             holder.tvRevision.setTextColor(0xFF01BA53.toInt())
 
-            holder.tvDetails.text = "Before: "${item.previousText}"\nAfter: "${item.newText}""
+            holder.tvDetails.text = "Before: \"${item.previousText}\"\nAfter: \"${item.newText}\""
             holder.tvDetails.setTextColor(0xFFFFFFFF.toInt())
         }
 
