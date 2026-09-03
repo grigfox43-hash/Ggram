@@ -5,7 +5,7 @@ import android.content.SharedPreferences
 
 /**
  * Centralized reactive configuration singleton for Ggram.
- * Persists user preferences, stealth toggles, adblock filters, AI settings, and UI styles.
+ * Persists user preferences, stealth toggles, adblock filters, AI settings, storage quotas, and UI styles.
  */
 object GgramConfig {
 
@@ -60,6 +60,22 @@ object GgramConfig {
     private const val KEY_UI_CHECKMARK_STYLE = "ui_checkmark_style"
     private const val KEY_UI_COMPACT_CHATS = "ui_compact_chats"
     private const val KEY_UI_DISABLE_SWIPE_UP = "ui_disable_swipe_up"
+
+    // Keys - Smart Tabs
+    private const val KEY_SMART_TABS = "tabs_smart_enabled"
+    private const val KEY_TAB_USERS = "tabs_users_enabled"
+    private const val KEY_TAB_GROUPS = "tabs_groups_enabled"
+    private const val KEY_TAB_CHANNELS = "tabs_channels_enabled"
+    private const val KEY_TAB_BOTS = "tabs_bots_enabled"
+    private const val KEY_TAB_UNREAD = "tabs_unread_enabled"
+
+    // Keys - Storage & Ergonomics & Notifications
+    private const val KEY_STORAGE_CHANNEL_QUOTA = "storage_channel_quota_mb"
+    private const val KEY_CHAT_HIDE_BLOCKED = "chat_hide_blocked_groups"
+    private const val KEY_NOTIF_ESSENTIAL_ONLY = "notif_essential_only"
+    private const val KEY_NOTIF_QUIET_HOURS = "notif_quiet_hours"
+    private const val KEY_NOTIF_QUIET_START = "notif_quiet_start"
+    private const val KEY_NOTIF_QUIET_END = "notif_quiet_end"
 
     private lateinit var prefs: SharedPreferences
 
@@ -214,4 +230,56 @@ object GgramConfig {
     var isDisableSwipeUpChannel: Boolean
         get() = prefs.getBoolean(KEY_UI_DISABLE_SWIPE_UP, true)
         set(value) = prefs.edit().putBoolean(KEY_UI_DISABLE_SWIPE_UP, value).apply()
+
+    // Smart Tabs
+    var isSmartTabsEnabled: Boolean
+        get() = prefs.getBoolean(KEY_SMART_TABS, true)
+        set(value) = prefs.edit().putBoolean(KEY_SMART_TABS, value).apply()
+
+    var isTabUsersEnabled: Boolean
+        get() = prefs.getBoolean(KEY_TAB_USERS, true)
+        set(value) = prefs.edit().putBoolean(KEY_TAB_USERS, value).apply()
+
+    var isTabGroupsEnabled: Boolean
+        get() = prefs.getBoolean(KEY_TAB_GROUPS, true)
+        set(value) = prefs.edit().putBoolean(KEY_TAB_GROUPS, value).apply()
+
+    var isTabChannelsEnabled: Boolean
+        get() = prefs.getBoolean(KEY_TAB_CHANNELS, true)
+        set(value) = prefs.edit().putBoolean(KEY_TAB_CHANNELS, value).apply()
+
+    var isTabBotsEnabled: Boolean
+        get() = prefs.getBoolean(KEY_TAB_BOTS, true)
+        set(value) = prefs.edit().putBoolean(KEY_TAB_BOTS, value).apply()
+
+    var isTabUnreadEnabled: Boolean
+        get() = prefs.getBoolean(KEY_TAB_UNREAD, true)
+        set(value) = prefs.edit().putBoolean(KEY_TAB_UNREAD, value).apply()
+
+    // Storage Quota
+    var defaultChannelQuotaMb: Int
+        get() = prefs.getInt(KEY_STORAGE_CHANNEL_QUOTA, 500)
+        set(value) = prefs.edit().putInt(KEY_STORAGE_CHANNEL_QUOTA, value).apply()
+
+    // Chat Ergonomics
+    var isHideBlockedInGroups: Boolean
+        get() = prefs.getBoolean(KEY_CHAT_HIDE_BLOCKED, true)
+        set(value) = prefs.edit().putBoolean(KEY_CHAT_HIDE_BLOCKED, value).apply()
+
+    // Notifications
+    var isEssentialPushesOnly: Boolean
+        get() = prefs.getBoolean(KEY_NOTIF_ESSENTIAL_ONLY, false)
+        set(value) = prefs.edit().putBoolean(KEY_NOTIF_ESSENTIAL_ONLY, value).apply()
+
+    var isQuietHoursEnabled: Boolean
+        get() = prefs.getBoolean(KEY_NOTIF_QUIET_HOURS, true)
+        set(value) = prefs.edit().putBoolean(KEY_NOTIF_QUIET_HOURS, value).apply()
+
+    var quietHoursStart: Int
+        get() = prefs.getInt(KEY_NOTIF_QUIET_START, 23)
+        set(value) = prefs.edit().putInt(KEY_NOTIF_QUIET_START, value).apply()
+
+    var quietHoursEnd: Int
+        get() = prefs.getInt(KEY_NOTIF_QUIET_END, 8)
+        set(value) = prefs.edit().putInt(KEY_NOTIF_QUIET_END, value).apply()
 }

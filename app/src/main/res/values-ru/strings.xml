@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">Ggram</string>
     <string name="ggram_settings_title">Настройки Ggram</string>
-    <string name="ggram_settings_subtitle">Премиальный форк Telegram • v1.1.0 Emerald</string>
+    <string name="ggram_settings_subtitle">Премиальный форк Telegram • v1.2.0 Emerald</string>
     <string name="ggram_history_title">История изменений сообщения</string>
 
     <!-- Разделы -->
@@ -12,10 +12,51 @@
     <string name="category_security">🔒 Двойное дно и безопасность</string>
     <string name="category_media">⚡ Turbo-загрузчик медиафайлов</string>
     <string name="category_network">🌐 Прокси и анти-цензура</string>
+    <string name="category_tabs">🗂️ Автоматические вкладки (Smart Tabs)</string>
+    <string name="category_profiler">🔍 Шпионский инспектор профилей</string>
+    <string name="category_storage">🧹 Умная очистка памяти и квот</string>
+    <string name="category_ergonomics">✍️ Эргономика чатов и переписки</string>
+    <string name="category_notifications">🔕 Интеллектуальные уведомления</string>
     <string name="category_antirecall">💾 Сохранение сообщений (Anti-Recall)</string>
     <string name="category_bypass">🔓 Обход ограничений (Bypass)</string>
     <string name="category_ui">🎨 Кастомизация интерфейса</string>
     <string name="category_about">ℹ️ О приложении Ggram</string>
+
+    <!-- Автоматические вкладки -->
+    <string name="pref_tabs_smart">Включить автоматические суб-табы</string>
+    <string name="pref_tabs_smart_desc">Авто-разделение чатов на Все, Личные, Группы, Каналы и Боты</string>
+    <string name="tab_all">Все</string>
+    <string name="tab_direct">Личные</string>
+    <string name="tab_groups">Группы</string>
+    <string name="tab_channels">Каналы</string>
+    <string name="tab_bots">Боты</string>
+    <string name="tab_unread">Непрочитанные</string>
+
+    <!-- Инспектор профиля -->
+    <string name="pref_profiler_reg_date">Оценка даты регистрации аккаунта</string>
+    <string name="pref_profiler_reg_date_desc">Расчет года создания аккаунта по его Telegram ID</string>
+    <string name="pref_profiler_mutual">Индикатор взаимного контакта</string>
+    <string name="pref_profiler_mutual_desc">Показывает, записан ли ваш номер в контактах собеседника</string>
+
+    <!-- Очистка памяти -->
+    <string name="pref_storage_channel_quota">Лимит кэша на канал</string>
+    <string name="pref_storage_channel_quota_desc">Максимальный объем кэша для каждого канала отдельно (500 МБ)</string>
+    <string name="pref_storage_clean_circles">Очистить кэш видеокружочков</string>
+    <string name="pref_storage_clean_stickers">Очистить кэш стикеров</string>
+
+    <!-- Эргономика -->
+    <string name="pref_chat_copy_snippet">Копирование части текста</string>
+    <string name="pref_chat_copy_snippet_desc">Выделение и копирование нужного фрагмента без всего сообщения</string>
+    <string name="pref_chat_forward_clean">Пересылка без автора в 1 клик</string>
+    <string name="pref_chat_forward_clean_desc">Отправка сообщения без указания оригинального автора</string>
+    <string name="pref_chat_hide_blocked">Скрывать заблокированных в группах</string>
+    <string name="pref_chat_hide_blocked_desc">Полное скрытие сообщений заблокированных людей в общих беседах</string>
+
+    <!-- Уведомления -->
+    <string name="pref_notif_essential_only">Только важные пуш-уведомления</string>
+    <string name="pref_notif_essential_only_desc">Звук и пуши только для личных сообщений и прямых тегов @username</string>
+    <string name="pref_notif_quiet_hours">Ночной режим тишины</string>
+    <string name="pref_notif_quiet_hours_desc">Автоматическое заглушение каналов с 23:00 до 08:00</string>
 
     <!-- AI и Премиум бесплатно -->
     <string name="pref_ai_v2t">Бесплатный Voice-to-Text</string>
@@ -110,6 +151,6 @@
     <!-- Метки -->
     <string name="badge_deleted">[Удалено]</string>
     <string name="badge_edited">[Изм.]</string>
-    <string name="about_version">Ggram для Android v1.1.0 (Emerald All-in-One)</string>
+    <string name="about_version">Ggram для Android v1.2.0 (Emerald All-in-One Superfork)</string>
     <string name="about_palette">Палитра: Obsidian #050505 и Emerald #01ba53</string>
 </resources>

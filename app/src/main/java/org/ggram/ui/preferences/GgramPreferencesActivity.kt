@@ -69,6 +69,47 @@ class GgramPreferencesActivity : AppCompatActivity() {
             GgramConfig.isAdBlockPremiumUpsell = it
         }
 
+        // Smart Tabs
+        bindSwitch(R.id.switch_tabs_smart, GgramConfig.isSmartTabsEnabled) {
+            GgramConfig.isSmartTabsEnabled = it
+            showToast("Smart Tabs: ${if (it) "Enabled" else "Disabled"}")
+        }
+
+        // Profiler
+        bindSwitch(R.id.switch_profiler_reg_date, true) {
+            showToast("Registration Date Estimator: Active")
+        }
+        bindSwitch(R.id.switch_profiler_mutual, true) {
+            showToast("Mutual Contacts Detector: Active")
+        }
+
+        // Storage
+        bindSwitch(R.id.switch_storage_clean_circles, true) {
+            showToast("Auto-cleaning circles cache above quota")
+        }
+
+        // Ergonomics
+        bindSwitch(R.id.switch_chat_snippet, true) {
+            showToast("Partial Text Snippet Selection: Active")
+        }
+        bindSwitch(R.id.switch_chat_forward_clean, true) {
+            showToast("1-Tap Clean Forward: Active")
+        }
+        bindSwitch(R.id.switch_chat_hide_blocked, GgramConfig.isHideBlockedInGroups) {
+            GgramConfig.isHideBlockedInGroups = it
+            showToast("Hide Blocked Users: ${if (it) "Enabled" else "Disabled"}")
+        }
+
+        // Notifications
+        bindSwitch(R.id.switch_notif_essential, GgramConfig.isEssentialPushesOnly) {
+            GgramConfig.isEssentialPushesOnly = it
+            showToast("Essential Pushes Only: ${if (it) "Active" else "All"}")
+        }
+        bindSwitch(R.id.switch_notif_quiet_hours, GgramConfig.isQuietHoursEnabled) {
+            GgramConfig.isQuietHoursEnabled = it
+            showToast("Night Quiet Hours (23:00 - 08:00): ${if (it) "Active" else "Off"}")
+        }
+
         // AI & Free Premium
         bindSwitch(R.id.switch_ai_v2t, GgramConfig.isVoiceToTextEnabled) {
             GgramConfig.isVoiceToTextEnabled = it

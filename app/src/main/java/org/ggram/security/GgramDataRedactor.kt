@@ -14,17 +14,17 @@ import java.util.regex.Pattern
  */
 object GgramDataRedactor {
 
-    private val PHONE_PATTERN = Pattern.compile("(?i)(?:\\+?[0-9]{1,3})?[\\s-]?(?:\\([0-9]{2,4}\\)|[0-9]{2,4})[\\s-]?[0-9]{3,4}[\\s-]?[0-9]{3,4}")
     private val CARD_PATTERN = Pattern.compile("\\b(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|22[2-9][0-9]{12}|6011[0-9]{12})\\b")
     private val CRYPTO_PATTERN = Pattern.compile("\\b(?:0x[a-fA-F0-9]{40}|T[A-Za-z1-9]{33}|UQ[A-Za-z0-9_-]{46})\\b")
+    private val PHONE_PATTERN = Pattern.compile("(?:\\+?[0-9]{1,3}[\\s-]?)?(?:\\([0-9]{2,4}\\)[\\s-]?|[0-9]{2,4}[\\s-]?)?[0-9]{3,4}[\\s-]?[0-9]{2,4}[\\s-]?[0-9]{2,4}")
 
     fun redactSensitiveText(text: String): String {
         if (!GgramConfig.isDataRedactionEnabled) return text
 
         var sanitized = text
-        sanitized = PHONE_PATTERN.matcher(sanitized).replaceAll("[НОМЕР СКРЫТ]")
-        sanitized = CARD_PATTERN.matcher(sanitized).replaceAll("[КАРТА СКРЫТА]")
         sanitized = CRYPTO_PATTERN.matcher(sanitized).replaceAll("[КОШЕЛЕК СКРЫТ]")
+        sanitized = CARD_PATTERN.matcher(sanitized).replaceAll("[КАРТА СКРЫТА]")
+        sanitized = PHONE_PATTERN.matcher(sanitized).replaceAll("[НОМЕР СКРЫТ]")
         return sanitized
     }
 

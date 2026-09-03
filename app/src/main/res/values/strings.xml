@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">Ggram</string>
     <string name="ggram_settings_title">Ggram Preferences</string>
-    <string name="ggram_settings_subtitle">Ultimate Telegram Fork • v1.1.0 Emerald</string>
+    <string name="ggram_settings_subtitle">Ultimate Telegram Fork • v1.2.0 Emerald</string>
     <string name="ggram_history_title">Message Edit History</string>
 
     <!-- Category Headers -->
@@ -12,10 +12,51 @@
     <string name="category_security">🔒 Double Bottom &amp; Stealth Vault</string>
     <string name="category_media">⚡ Turbo Media Downloader</string>
     <string name="category_network">🌐 Proxy &amp; Anti-Censorship</string>
+    <string name="category_tabs">🗂️ Smart Chat Tabs</string>
+    <string name="category_profiler">🔍 User Profiler &amp; Inspector</string>
+    <string name="category_storage">🧹 Smart Storage Cleaner</string>
+    <string name="category_ergonomics">✍️ Chat Ergonomics &amp; Freedom</string>
+    <string name="category_notifications">🔕 Intelligent Notifications</string>
     <string name="category_antirecall">💾 Anti-Recall &amp; Message Spy</string>
     <string name="category_bypass">🔓 Restrictions Bypass</string>
     <string name="category_ui">🎨 UI &amp; Interface Customizer</string>
     <string name="category_about">ℹ️ About Ggram</string>
+
+    <!-- Smart Tabs -->
+    <string name="pref_tabs_smart">Enable Smart Sub-Tabs</string>
+    <string name="pref_tabs_smart_desc">Automatically splits chats into All, Direct, Groups, Channels, and Bots</string>
+    <string name="tab_all">All</string>
+    <string name="tab_direct">Direct</string>
+    <string name="tab_groups">Groups</string>
+    <string name="tab_channels">Channels</string>
+    <string name="tab_bots">Bots</string>
+    <string name="tab_unread">Unread</string>
+
+    <!-- User Profiler -->
+    <string name="pref_profiler_reg_date">Account Registration Estimate</string>
+    <string name="pref_profiler_reg_date_desc">Shows calculated registration year by Telegram ID</string>
+    <string name="pref_profiler_mutual">Mutual Contact Indicator</string>
+    <string name="pref_profiler_mutual_desc">Shows if the user has your phone number saved in their contacts</string>
+
+    <!-- Storage Cleaner -->
+    <string name="pref_storage_channel_quota">Channel Storage Quota</string>
+    <string name="pref_storage_channel_quota_desc">Set maximum cache limit per channel (e.g. 500 MB)</string>
+    <string name="pref_storage_clean_circles">Clean Video Circles Cache</string>
+    <string name="pref_storage_clean_stickers">Clean Stickers Cache</string>
+
+    <!-- Ergonomics -->
+    <string name="pref_chat_copy_snippet">Copy Selected Snippet</string>
+    <string name="pref_chat_copy_snippet_desc">Select and copy partial text instead of whole message</string>
+    <string name="pref_chat_forward_clean">Forward Without Author</string>
+    <string name="pref_chat_forward_clean_desc">1-tap forward stripping original sender quote</string>
+    <string name="pref_chat_hide_blocked">Hide Blocked Users in Groups</string>
+    <string name="pref_chat_hide_blocked_desc">Completely removes messages of blocked users from group feeds</string>
+
+    <!-- Notifications -->
+    <string name="pref_notif_essential_only">Essential Pushes Only</string>
+    <string name="pref_notif_essential_only_desc">Only alert for direct messages and @username mentions</string>
+    <string name="pref_notif_quiet_hours">Night Quiet Hours</string>
+    <string name="pref_notif_quiet_hours_desc">Automatically silence channel notifications from 23:00 to 08:00</string>
 
     <!-- AI & Free Premium -->
     <string name="pref_ai_v2t">Free Voice-to-Text</string>
@@ -110,6 +151,6 @@
     <!-- Status Badges -->
     <string name="badge_deleted">[Deleted]</string>
     <string name="badge_edited">[Edited]</string>
-    <string name="about_version">Ggram for Android v1.1.0 (Emerald All-in-One)</string>
+    <string name="about_version">Ggram for Android v1.2.0 (Emerald All-in-One Superfork)</string>
     <string name="about_palette">Palette: Obsidian #050505 &amp; Emerald #01ba53</string>
 </resources>
