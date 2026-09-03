@@ -11,8 +11,8 @@ android {
         applicationId "org.ggram.messenger"
         minSdk 26
         targetSdk 34
-        versionCode 10001
-        versionName "1.0.0-emerald"
+        versionCode 10200
+        versionName "1.2.0-emerald"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
